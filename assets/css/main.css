@@ -34,6 +34,15 @@ a:hover {
   font-weight: 600;
 }
 
+.seperator {
+ width: 1px;
+  height: 2rem;
+  background-color: black;
+  display: inline-block;
+}
+
+
+
 @media (max-width:500px) {
   .my-card .card-body {
     padding-left: clamp(0.4rem, 2vw, 0.8rem);
