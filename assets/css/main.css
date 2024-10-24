@@ -64,7 +64,17 @@ footer .accordion * {
   border-top: none;
   border-left: none;
   border-right: none;
+  --bs-accordion-active-bg: var(--dark-bg-color);
+  --bs-accordion-active-color: white;
 }
+
+
+ footer .accordion li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+ }
+
+
 
 
 

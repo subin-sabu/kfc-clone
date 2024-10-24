@@ -378,7 +378,7 @@
       </section>
     </main>
     <footer class="bg-dark text-white py-5">
-      <div class="container mt-5">
+      <div class="container mt-5 d-none d-lg-block">
         <div class="row">
           <div class="col text-center">
             <img src="assets/images/KFC_Logo.svg" alt="logo">
@@ -441,7 +441,11 @@
 
       <!--Accordion for smaller screens -->
 
-      <div class="container">
+      <div class="container d-lg-none">
+        
+        <div class="p-4 d-flex justify-content-center align-items-center">
+          <img src="assets/images/KFC_Logo.svg" alt="">
+        </div>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -462,26 +466,61 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+                Legal
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Caution Notice</a></li>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+                KFC Food
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <li><a href="#">Menu</a></li>
+              <li><a href="#">Order Lookup</a></li>
+              <li><a href="#">Gift Card</a></li>
+              <li><a href="#">Nutrition</a></li>
               </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Support
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li><a href="#">Get Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Privacy</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="">
+                <a href="#"><img src="assets/images/Find_KFC.svg" alt="location" class="pe-2">KFC India</a>
+              </button>
+            </h2>
+          </div>
+
+          <!-- end of accordion -->
+           <h5 class="py-4 px-3 fs-7"><a href="#">Download App</a></h5>
+           <div class="d-flex justify-content-center">
+            <a href="#" class="pe-2"><img src="assets/images/google_play.svg" alt="download app"></a>
+            <a href="#"><img src="assets/images/apple.svg" alt="download app"></a>
           </div>
         </div>
       </div>
