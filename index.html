@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC | Order KFC Chicken Online & Find Restaurants</title>
+    <meta name="description" content="Finger Licking Good!" />
+    <!-- Remove apple-touch-icon if pwa cannot be made with just manifest.json and sw.js -->
+    <link rel="apple-touch-icon" href="assets/images/logo192.png" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:title"
+      content="KFC | Order KFC Chicken Online & Find Restaurants"
+    />
+    <meta name="og:description" content="Finger Licking Good!" />
+    <meta
+      name="og:image"
+      content="https://subin-sabu.github.io/kfc-clone/assets/images/KFC50.jpg"
+    />
+    <meta name="og:image:alt" content="Download the app to get 50% off*" />
+
+    <meta
+      name="twitter:title"
+      content="KFC|Order KFC Chicken Online & Find Restaurants"
+    />
+    <meta name="twitter:description" content="Finger Licking Good!" />
+    <meta
+      name="twitter:image"
+      content="https://subin-sabu.github.io/kfc-clone/assets/images/KFC50.jpg"
+    />
+    <meta name="twitter:image:alt" content="Download the app to get 50% off*" />
+
+    <!-- Google Fonts CDN -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="d-flex justify-content-center align-items-center p-2 fs-8">
+        <img
+          class="pe-1"
+          src="assets/images/Search_Pin.svg"
+          alt="location-icon"
+        />
+        Allow location access for local store menu and promos
+
+        <button type="button" class="btn btn-dark fs-8 ms-2 rounded-pill">
+          Set Location
+        </button>
+      </div>
+      <hr />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <img src="assets/images/kfcLogo.svg" alt="KFC logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+            </ul>
+            <div class="navbar-nav ms-auto">
+              <img src="assets/images/Account_Icon.svg" alt="Sign in" />
+              <span>|</span>
+              <span>₹0</span>
+              <img src="assets/images/bucket_cart_icon.svg" alt="cart" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Section 1-->
+      <section>
+        <div
+          class="d-flex justify-content-center align-items-center flex-wrap bg-dark py-2 text-white"
+        >
+          <p class="mb-0 me-2 fs-7">
+            <strong>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</strong>
+          </p>
+          <div>
+            <button class="btn btn-danger rounded-pill fs-8 py-2 px-4">
+              Start Order
+            </button>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width:800px)"
+            srcset="assets/images/App_750x634px.webp"
+          />
+          <img
+            src="assets\images\web_1440x396px.webp"
+            alt="main image"
+            class="img-fluid col-12"
+          />
+        </picture>
+      </section>
+      <!-- Section 2-->
+      <section class="p-2 p-lg-5 mx-lg-5">
+        <div class="d-flex align-items-center mb-3">
+          <h2 class="d-inline me-3">BROWSE CATEGORIES</h2>
+          <hr class="flex-grow-1 text-dark" />
+        </div>
+        <div class="container text-center">
+          <!-- CARD ROW 1-->
+          <div class="row row-cols-2 row-cols-lg-4 gy-3">
+            <!-- card 1 -->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/inter-burger-fest.jpg"
+                  class="card-img-top"
+                  alt="intenational fest"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">INTERNATIONAL BURGER FEST</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2-->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/match-day.jpg"
+                  class="card-img-top"
+                  alt="match"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MATCH DAY COMBOS</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/value-lunch.jpg"
+                  class="card-img-top"
+                  alt="value lunch"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VALUE LUNCH SPECIALS</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4-->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/box-meals.jpg"
+                  class="card-img-top"
+                  alt="box measl"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BOX MEALS</h5>
+                </div>
+              </div>
+            </div>
+
+            <!--card -5 -->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/burgers.jpg"
+                  class="card-img-top"
+                  alt="burgers"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BURGERS</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 6-->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/chicken-buckets.jpg"
+                  class="card-img-top"
+                  alt="chicken-buckets"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN BUCKETS</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/rice-bows.jpg"
+                  class="card-img-top"
+                  alt="rice bowl"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RICE BOWLZ</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+
+            <div class="col">
+              <div class="card my-card">
+                <img
+                  src="assets/images/view-all-menu.jpg"
+                  class="card-img-top"
+                  alt="view all"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VIEW ALL MENU</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- horizontal overflow section -->
+
+      <section class="bg-dark text-white py-5">
+        <div class="container">
+          <!-- heading -->
+          <div
+            class="row row-cols-1 row-cols-md-2 d-flex align-items-center text-center"
+          >
+            <h2 class="col">Exclusive Offers For You</h2>
+            <p class="col">View All Lists <span>-></span></p>
+          </div>
+          <!-- overflow card -->
+
+          <div class="d-flex overflow-x-auto my-3">
+            <!-- card -->
+            <div class="col me-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/PHP75.jpg"
+                  class="card-img-top"
+                  alt="75 off"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-semibold text-danger">GET FLAT 75 OFF..</h5>
+                  <p class="card-text fs-6">
+                    Get Flat 75 off on a cart value of 599 or above
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="#" class="text-dark text-decoration-underline fs-6 fw-bold">View Details</a>
+                    <button class="btn btn-outline-dark rounded-pill fs-6 fw-bold">Apply Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col me-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/FREEROLL.jpg"
+                  class="card-img-top"
+                  alt="75 off"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-semibold text-danger">FREE DOUBLE..</h5>
+                  <p class="card-text fs-6">
+                    Free Double Chicken Roll on cart value of 999 and above
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="#" class="text-dark text-decoration-underline fs-6 fw-bold">View Details</a>
+                    <button class="btn btn-outline-dark rounded-pill fs-6 fw-bold">Apply Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4-->
+            <div class="col me-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/VEGZINGER.jpg"
+                  class="card-img-top"
+                  alt="75 off"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-semibold text-danger">1 PIECE FREE VEG..</h5>
+                  <p class="card-text fs-6">
+                    1 piece free veg zinger on cart value of 499 and above
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="#" class="text-dark text-decoration-underline fs-6 fw-bold">View Details</a>
+                    <button class="btn btn-outline-dark rounded-pill fs-6 fw-bold">Apply Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2-->
+            <div class="col me-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/ADDCHK99.jpg"
+                  class="card-img-top"
+                  alt="75 off"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-semibold text-danger">ADD 2 PIECE HOT N..</h5>
+                  <p class="card-text fs-6">
+                    Add 2 piece Hot N Crispy Chicken at just 99 only
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="#" class="text-dark text-decoration-underline fs-6 fw-bold">View Details</a>
+                    <button class="btn btn-outline-dark rounded-pill fs-6 fw-bold">Apply Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <!-- card 3-->
+            <div class="col me-2">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/images/100OFF.jpg"
+                  class="card-img-top"
+                  alt="75 off"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-semibold text-danger">UPTO 100 OFF O..</h5>
+                  <p class="card-text fs-6">
+                    Get upto 100 Off on cart value of 699 and above
+                  </p>
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="#" class="text-dark text-decoration-underline fs-6 fw-bold">View Details</a>
+                    <button class="btn btn-outline-dark rounded-pill fs-6 fw-bold">Apply Offer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white py-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col text-center">
+            <img src="assets/images/KFC_Logo.svg" alt="logo">
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">KFC India</a></li>
+              <li><a href="#">About KFC</a></li>
+              <li><a href="#">KFC Care</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Our Golden Past</a></li>
+              <li><a href="#">Disclosure</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Caution Notice</a></li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">KFC Food</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Order Lookup</a></li>
+              <li><a href="#">Gift Card</a></li>
+              <li><a href="#">Nutrition</a></li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Get Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Privacy</a></li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#"><img src="assets/images/Find_KFC.svg" alt="location" class="pe-2">KFC India</a></li>
+              
+            </ul>
+          </div>
+          <div class="col">
+            <div><img src="assets/images/google_play.svg" alt="download"></div>
+          </div>
+          <div class="col">
+            <div><img src="assets/images/apple.svg" alt="download"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Accordion for smaller screens -->
+
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                KFC India
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <li><a href="#">About KFC</a></li>
+              <li><a href="#">KFC Care</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Our Golden Past</a></li>
+              <li><a href="#">Disclosure</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    </footer>
+    <!-- Bootstrap js CDN (popper included)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #e4002b; /* kfc red */
+  --dark-bg-color: #202124; /* footer bg */
+  --fill-color: #212529; /* also used in fonts */
+  --card-bg-color: #f8f7f5;
+  --bs-dark: #212529;
+  --bs-danger: #e4002b;
+}
+/* setting box-sizing: border-box and removing margin and padding using universal selector is done by bootstrap */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fs-7 {
+  font-size: 0.75rem;
+}
+
+.fs-8 {
+  font-size: 0.65rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.my-card h5 {
+  font-size: clamp(0.4rem, 2vw , 0.8rem);
+  font-weight: 600;
+}
+
+@media (max-width:500px) {
+  .my-card .card-body {
+    padding-left: clamp(0.4rem, 2vw, 0.8rem);
+    padding-right: clamp(0.4rem, 2vw, 0.8rem);
+    padding-top: clamp(0.4rem, 2vw, 0.8rem);
+    padding-bottom: clamp(0.4rem, 2vw, 0.8rem);
+  }
+
+  .my-card h5 {
+    margin: 0px;
+  }
+}
+
+footer ul li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+footer ul li:nth-child(1) {
+  font-weight: 600;
+}
+
+footer .accordion * {
+  background-color: var(--bs-dark);
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+
+
+
+
